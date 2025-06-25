@@ -1,25 +1,103 @@
+/* Reset e configuração global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    background-color: #081b29;
+    background-color: #121212;
+    margin: 0;
 }
 
-.header {
+/* Estrutura principal */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
+header {
     width: 100%;
-    background-color: blue;
+    padding: 10px 20px;
+    background-color: #121212;
+    position: relative;
 }
 
+/* Links gerais */
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* Seção principal */
 section {
-    border: 2px solid #1875E8;
-    border-radius: 24px;
-    margin: 10px;
-    width: 80vw;
-    height: 80vh;
     text-align: center;
-    color: white;
+    padding: 40px;
+    margin: 0 50px 20px 50px;
+    border: 2px solid #1e90ff;
+    border-radius: 16px;
+    background-color: #1a1a1a;
+    color: aliceblue;
+}
+
+input {
+    width: 100%;
+}
+
+.form {
+    display: block;
+}
+
+button {
+    width: 100px;
+}
+
+/* Títulos */
+h2 {
+    padding: 15px 0 15px 0;
+}
+
+.subtitle {
+    color: red;
+    padding: 5px 0;
+}
+
+/* Parágrafos */
+section p {
+    padding: 0 0 20px 0;
+}
+
+.presentation {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px;
+}
+
+/* Classes utilitárias e adicionais */
+.name {
+    padding-bottom: 25px;
+}
+
+.informations {
+    padding: 0 0 20px 0;   
+}
+
+.external_link {
+    padding: 5px;
+    display: inline-block;    
+}
+
+.strong {
+    color: rgb(22, 243, 14);
 }
