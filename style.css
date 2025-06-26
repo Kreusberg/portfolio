@@ -47,8 +47,8 @@ input {
     width: 100%;
 }
 
-.form {
-    display: block;
+.validator {
+    display: none;
 }
 
 button {
