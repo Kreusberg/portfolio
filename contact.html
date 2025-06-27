@@ -14,12 +14,13 @@
         </nav>
     </header>
     <main>
-        <section class="form">
+        <section class="form" id="form">
             <h1>Formulário para contato</h1>
             <p>Por favor, preencha as informações abaixo para entrar em contato caso tenha alguma sugestão/opinião:</p>
 
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome"/>
+                <input type="text" id="nome" onkeyup="validarNome()"/>
+                <p class="validator" id="validationNome"></p>
 
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" onkeyup="validarTelefone()"/>
@@ -34,10 +35,9 @@
 
                 <label for="send">Enviar</label>
                 <button type="submit" id="submit">>>>>>>>>>>>></button>
-
         </section>
+            <p class="validator" id="afterSubmit"></p>
     </main>
-
     <script src="index.js" defer></script>
 </body>
 </html>
