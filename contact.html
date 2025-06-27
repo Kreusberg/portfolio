@@ -19,24 +19,32 @@
             <p>Por favor, preencha as informações abaixo para entrar em contato caso tenha alguma sugestão/opinião:</p>
 
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" onkeyup="validarNome()"/>
+                <input type="text" class="label" id="nome" onkeyup="validarNome()"/>
                 <p class="validator" id="validationNome"></p>
 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" onkeyup="validarTelefone()"/>
+                <input type="tel" class="label" id="telefone" onkeyup="validarTelefone()"/>
                 <p class="validator" id="validationTelefone"></p>
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" onkeyup="validarEmail()"/>
+                <input type="email" class="label" id="email" onkeyup="validarEmail()"/>
                 <p class="validator" id="validationEmail"></p>
 
                 <!-- <label for="motivo" class="motivo">Motivo do contato:</label>
                 <input type="text" id="motivo"/> -->
 
+                <p class="validator" id="validator"></p>
+
                 <label for="send">Enviar</label>
-                <button type="submit" id="submit">>>>>>>>>>>>></button>
+                <button type="submit" id="submit" onclick="sendRequest()">>>>>>>>>>>>></button>
         </section>
-            <p class="validator" id="afterSubmit"></p>
+
+        <div>
+            <p class="afterSubmit" id="afterSubmit"></p>
+            <a class="afterSubmit" id="returnHome" href="index.html"></a>
+        </div>
+            
+
     </main>
     <script src="index.js" defer></script>
 </body>

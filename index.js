@@ -57,3 +57,30 @@ function validarEmail() {
         return false;
     }
 }
+
+function sendRequest() {
+    const form = document.getElementById("form");
+    const button = document.getElementById("submit");
+    const validator = document.getElementById("validator");
+    const returnHomeBtn = document.getElementById("returnHome");
+    
+
+    if (validarNome() == false || validarTelefone() == false || validarEmail() == false) {
+        button.disabled = false;
+        validator.style.display = "block";
+        validator.style.color = "red";
+        validator.textContent = "Por favor, valide os campos, pois nem todos estão corretamente preenchidos!";
+    } else {
+        console.log("pode seguir");
+        button.disabled = true;
+        form.style.display = "none";
+        afterSubmit.style.display = "block";
+        afterSubmit.textContent = "Obrigado por testar minha aplicação. Sua finalidade era para a execução de um trabalho da faculdade";
+        afterSubmit.style.color = "white";
+
+        returnHomeBtn.style.display = "block";
+        returnHomeBtn.textContent = "Go back home";
+        returnHomeBtn.style.color = "white";
+    }
+
+}
