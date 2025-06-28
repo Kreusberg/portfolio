@@ -81,6 +81,11 @@ ul {
 
 li {
     padding: 5px;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.5;
 }
 
 /* Classes utilitárias e adicionais */
@@ -94,11 +99,18 @@ li {
 
 .external_link {
     padding: 5px;
-    display: inline-block;    
+    display: inline-block;
 }
 
 .strong {
     color: rgb(22, 243, 14);
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5px;
+    /* ^ > < V */
+    padding: 10px;
 }
 
 #afterSubmit, #returnHome {

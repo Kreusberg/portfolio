@@ -1,0 +1,77 @@
+/* @media screen and (max-width: 700px) {
+  .strong {
+    color: purple;
+  }
+
+  body {
+    max-width: 700px;
+  }
+
+  .informations {
+    padding: 5%;
+  }
+
+  .external_link {
+    display: grid;
+  }
+} */
+
+/* === Responsivo: Telas menores que 768px === */
+/* Responsivo para telas menores que 768px */
+/* === Responsivo: Telas menores que 768px === */
+@media (max-width: 768px) {
+  section {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .presentation {
+    max-width: 90%;
+  }
+
+  h1.name {
+    font-size: 1.5rem;
+  }
+
+  h2.informations {
+    font-size: 1.2rem;
+  }
+
+  section p {
+    font-size: 1rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .external_link {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .external_link a {
+    display: block;
+    padding: 10px;
+    background-color: #222;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+
+  .external_link a:hover {
+    background-color: #333;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+section p {
+  width: 55vw;
+  text-align: center;
+  margin: 0 auto;
+}
