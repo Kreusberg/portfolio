@@ -67,12 +67,14 @@ function sendRequest() {
 
     if (validarNome() == false || validarTelefone() == false || validarEmail() == false) {
         button.disabled = false;
+        button.style.backgroundColor = "red";
         validator.style.display = "block";
         validator.style.color = "red";
         validator.textContent = "Por favor, valide os campos, pois nem todos estão corretamente preenchidos!";
     } else {
         console.log("pode seguir");
         button.disabled = true;
+        button.style.backgroundColor = "red";
         form.style.display = "none";
         afterSubmit.style.display = "block";
         afterSubmit.textContent = "Obrigado por testar minha aplicação. Sua finalidade era para a execução de um trabalho da faculdade";
@@ -80,7 +82,6 @@ function sendRequest() {
 
         returnHomeBtn.style.display = "block";
         returnHomeBtn.textContent = "Go back home";
-        returnHomeBtn.style.color = "white";
     }
 
 }
