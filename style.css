@@ -29,6 +29,7 @@ header {
 a {
     color: yellow;
     text-decoration: none;
+    padding: 5px;
 }
 
 /* Seção principal */
