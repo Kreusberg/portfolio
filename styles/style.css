@@ -1,3 +1,14 @@
+/* Variáveis globais */
+:root {
+    --yellow: yellow;
+    --blue: rgb(30, 144, 255);
+    --green: rgb(22, 243, 14);
+    --red: rgb(255, 69, 0);
+    --text: rgb(240, 248, 255);
+    --bgColor: rgb(26, 26, 26);
+}
+
+/* Reset global */
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +17,10 @@
 }
 
 body {
-    background-color: #121212;
-    margin: 0;
+    background-color: var(--bgColor);
 }
 
-/* Estrutura principal */
+/* Conteúdo body */
 main {
     display: flex;
     justify-content: center;
@@ -25,13 +35,13 @@ main {
 header {
     width: 100%;
     padding: 10px 20px;
-    background-color: #121212;
+    background-color: var(--bgColor);
     position: relative;
 }
 
 /* Links gerais */
 a {
-    color: yellow;
+    color: var(--yellow);
     text-decoration: none;
     padding: 5px;
 }
@@ -41,16 +51,17 @@ section {
     text-align: center;
     padding: 40px;
     margin: 0 50px 20px 50px;
-    border: 2px solid #1e90ff;
+    border: 2px solid var(--blue);
     border-radius: 16px;
-    background-color: #1a1a1a;
-    color: aliceblue;
+    background-color: var(--bgColor);
+    color: var(--text);
 }
 
 input {
     width: 100%;
 }
 
+/* Oculta o elemento .validator, pois será exibido somente em caso de falha de preenchimento de algum campo no formulário */
 .validator {
     display: none;
 }
@@ -59,14 +70,17 @@ button {
     width: 10px;
 }
 
-
 /* Títulos */
+h1 {
+    color: var(--green);
+}
+
 h2 {
     padding: 15px 0 15px 0;
 }
 
 .subtitle {
-    color: rgb(255, 102, 102);
+    color: var(--red);
     padding: 5px 0;
 }
 
@@ -110,15 +124,15 @@ p {
 
 .strong,
 #returnHome {
-    color: rgb(22, 243, 14);
+    color: var(--green);
 }
 
 .submit {
     cursor: pointer;
     border-radius: 5px;
-    /* ^ > < V */
     padding: 10px;
     height: 5vh;
+    margin-top: 15px;
 }
 
 #afterSubmit,
@@ -156,7 +170,7 @@ header {
 .menu-icon div {
     width: 100%;
     height: 3px;
-    background-color: rgb(22, 243, 14);
+    background-color: var(--green);
     transition: all 0.3s ease;
 }
 
@@ -167,7 +181,7 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: rgb(22, 243, 14);
-    background-color: #121212;
+    color: var(--green);
+    background-color: var(--bgColor);
     padding: 5px 10px;
 }
