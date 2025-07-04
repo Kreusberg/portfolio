@@ -138,7 +138,7 @@ function sendRequest() {
         afterSubmit.style.color = "white";
 
         returnHomeBtn.style.display = "block";
-        returnHomeBtn.textContent = "Go back home";
+        returnHomeBtn.textContent = "Voltar à página inicial";
     }
 }
 
