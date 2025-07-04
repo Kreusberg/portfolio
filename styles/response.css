@@ -2,6 +2,7 @@
 :root {
     --white: rgb(244, 244, 244);
     --black: rgb(34, 34, 34);
+    --blackHover: rgb(51, 51, 51);
     --blackWithAlpha: rgba(0, 0, 0, 0.2);
     --borderDivA: rgb(221, 221, 221);
 }
@@ -56,7 +57,7 @@
     }
 
     .external_link a:hover {
-        background-color: var(--black);
+        background-color: var(--blackHover);
     }
 
     button {
@@ -64,33 +65,39 @@
     }
 }
 
+/* Parágrafos nas seções */
 section p {
     width: 55vw;
     text-align: center;
     margin: 0 auto;
 }
 
+/* Botão de envio */
 .submit {
     width: 35vw;
     padding: 10px;
 }
 
+/* Links em geral */
 a {
     display: grid;
 }
 
+/* Header responsivo */
 header {
     flex-direction: column;
     align-items: flex-end;
     padding-bottom: 0;
 }
 
+/* Ícone do menu hamburguer */
 .menu-icon {
     display: flex;
     margin-right: 0;
     margin-top: 10px;
 }
 
+/* Navegação (mobile) */
 .nav-links {
     display: none;
     flex-direction: column;
