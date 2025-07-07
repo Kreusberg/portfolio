@@ -1,6 +1,6 @@
 /* Variáveis globais */
 :root {
-    --yellow: yellow;
+    --yellow: rgb(255, 255, 0);;
     --blue: rgb(30, 144, 255);
     --green: rgb(22, 243, 14);
     --red: rgb(255, 69, 0);
@@ -17,6 +17,8 @@
 }
 
 body {
+    height: 100%;
+      overflow-x: hidden;
     background-color: var(--bgColor);
 }
 
@@ -180,4 +182,17 @@ input {
 .afterSubmit {
     text-align: center;
     padding: 5px;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer a {
+    color: var(--yellow);
+    text-decoration: none;
+    text-align: center;
 }
